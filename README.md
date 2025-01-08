@@ -9,11 +9,11 @@
 
   | Passos | Comandos | Descrição |
   | --- | --- | --- |
-  | Passo 1 | `git clone (URL do repositório)` | Clona esse repositório no seu computador |
-  | Passo 2 | ... | Extraia o arquivo e abra cada pasta em uma janela diferente no VSCode (Pasta server e web) |
-  | Passo 3 |  `npm install` | Execute este comando no terminal de cada pasta aberta no VSCode |
-  | Passo 4 | `npm run dev` | Tanto no Back-end e no Front-end tem que executar este comando no terminal de cada janela do VSCode para rodar o projeto 100% |
-  | Passo 5 | ... | Com os dois executanto simultaneamente, você poderá testar a aplicação no navegador |
+  | 01 | `git clone (URL do repositório)` | Clona esse repositório no seu computador |
+  | 02 | ... | Extraia o arquivo e abra cada pasta em uma janela diferente no VSCode (Pasta server e web) |
+  | 03 |  `npm install` | Execute este comando no terminal de cada pasta aberta no VSCode |
+  | 04 | `npm run dev` | Tanto no Back-end e no Front-end tem que executar este comando no terminal de cada janela do VSCode para rodar o projeto 100% |
+  | 05 | ... | Com os dois executanto simultaneamente, você poderá testar a aplicação no navegador |
 
   <div align="center">
     
