@@ -9,5 +9,5 @@ createRoot(document.getElementById("root")!).render(
     <PostsProvider>
       <App />
     </PostsProvider>
-  </StrictMode>
+  </StrictMode>,
 )

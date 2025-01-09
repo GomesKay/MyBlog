@@ -26,24 +26,29 @@ export function SearchForm() {
   }
 
   return (
-    <form className="flex gap-6" onSubmit={handleSubmit(handleSearchPost)}>
+    <form
+      className="flex items-center gap-6 md:flex-col md:gap-4"
+      onSubmit={handleSubmit(handleSearchPost)}
+    >
       <input
         type="text"
         placeholder="Busque por um post..."
-        className="border-2 p-4 rounded-md flex-1 outline-none dark:bg-transparent focus:border-violet-600 hover:border-violet-600"
+        className="flex-1 rounded-md border-2 p-4 outline-none hover:border-violet-600 focus:border-violet-600 dark:bg-transparent md:max-w-[360px]"
         {...register("query")}
       />
 
-      <CreateNewPost />
+      <div className="flex gap-4">
+        <CreateNewPost />
 
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="flex gap-2 items-center px-6 text-white rounded-md disabled:cursor-not-allowed bg-violet-600 hover:opacity-80"
-      >
-        <MagnifyingGlass size={24} />
-        Buscar
-      </button>
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="flex items-center gap-2 rounded-md bg-violet-600 px-6 text-white hover:opacity-80 disabled:cursor-not-allowed sm:p-4"
+        >
+          <MagnifyingGlass size={24} />
+          <p className="sm:hidden">Buscar</p>
+        </button>
+      </div>
     </form>
   )
 }

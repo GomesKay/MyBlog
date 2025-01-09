@@ -14,7 +14,7 @@ export function PostDetailed() {
   }
 
   return (
-    <div className="p-6 rounded-md text-white bg-gray-500">
+    <div className="rounded-md bg-gray-500 p-6 text-white">
       <h1 className="text-2xl font-semibold">{post.title}</h1>
       <p className="text-sm text-gray-300">
         {new Date(post.created_at).toLocaleString()}

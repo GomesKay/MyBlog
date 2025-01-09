@@ -47,10 +47,10 @@ export function CreateNewPost() {
       <DialogTrigger asChild>
         <button
           type="button"
-          className="flex items-center rounded-md gap-2 p-6 text-white bg-violet-600 hover:opacity-80"
+          className="flex items-center gap-2 rounded-md bg-violet-600 p-6 text-white hover:opacity-80 md:p-4"
         >
           <Plus size={24} />
-          Novo post
+          <p className="sm:hidden">Novo post</p>
         </button>
       </DialogTrigger>
 
@@ -67,11 +67,11 @@ export function CreateNewPost() {
             <input
               type="text"
               placeholder="Escreva o título do seu post"
-              className="px-4 py-3 rounded-sm text-black outline-none border-2 hover:border-violet-600"
+              className="rounded-sm border-2 px-4 py-3 text-black outline-none hover:border-violet-600"
               {...register("title")}
             />
             {errors.title && (
-              <span className="text-red-400 font-medium">
+              <span className="font-medium text-red-400">
                 {errors.title.message}
               </span>
             )}
@@ -81,11 +81,11 @@ export function CreateNewPost() {
             <input
               type="text"
               placeholder="Descrição do post"
-              className="px-4 py-3 rounded-sm text-black outline-none border-2 hover:border-violet-600"
+              className="rounded-sm border-2 px-4 py-3 text-black outline-none hover:border-violet-600"
               {...register("content")}
             />
             {errors.content && (
-              <span className="text-red-400 font-medium">
+              <span className="font-medium text-red-400">
                 {errors.content.message}
               </span>
             )}
@@ -93,7 +93,7 @@ export function CreateNewPost() {
 
           <button
             type="submit"
-            className="px-4 py-3 w-20 rounded-md text-white bg-violet-600 hover:opacity-80"
+            className="w-20 rounded-md bg-violet-600 px-4 py-3 text-white hover:opacity-80"
           >
             Criar
           </button>

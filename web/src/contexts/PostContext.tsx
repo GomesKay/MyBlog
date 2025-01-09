@@ -50,7 +50,7 @@ export function PostsProvider({ children }: PostProviderProps) {
       // Filtragem
       const filteredPosts = query
         ? response.data.filter((post: Post) =>
-            post.title.toLowerCase().includes(query.toLowerCase())
+            post.title.toLowerCase().includes(query.toLowerCase()),
           )
         : response.data
 
@@ -103,8 +103,8 @@ export function PostsProvider({ children }: PostProviderProps) {
 
       setPosts((prevPosts) =>
         prevPosts.map((post) =>
-          post.id === id ? { ...post, ...response.data } : post
-        )
+          post.id === id ? { ...post, ...response.data } : post,
+        ),
       )
     } catch (error) {
       console.error("Erro ao excluir post: ", error)

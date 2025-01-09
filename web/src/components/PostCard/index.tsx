@@ -26,7 +26,7 @@ export function PostCard({ post }: PostCardProps) {
   const isValidDate = !isNaN(createdAtDate.getTime())
 
   return (
-    <div className="flex flex-col gap-4 p-6 rounded-md text-white bg-gray-500">
+    <div className="flex flex-col gap-4 truncate rounded-md bg-gray-500 p-6 text-white">
       <span className="flex items-center">
         <Link to={`/posts/${post.id}`} className="text-2xl font-semibold">
           {post.title}

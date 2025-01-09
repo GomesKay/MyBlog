@@ -15,14 +15,14 @@ export function Home() {
 
   return (
     <div className="h-screen p-6">
-      <header className="flex items-center justify-between p-6 border-b-2">
-        <Link to="/" className="flex gap-4 items-center">
+      <header className="flex items-center justify-between border-b-2 p-6">
+        <Link to="/" className="flex items-center gap-4">
           <img src={logo} className="size-10" />
 
-          <h1 className="text-2xl font-serif font-medium">MyBlog</h1>
+          <h1 className="font-serif text-2xl font-medium">MyBlog</h1>
         </Link>
 
-        <h1 className="text-3xl">Home</h1>
+        <h1 className="text-3xl md:hidden">Home</h1>
 
         <ThemeSwitch />
       </header>
@@ -30,7 +30,7 @@ export function Home() {
       <main className="pt-12">
         <SearchForm />
 
-        <div className="pt-12 flex gap-6 flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center gap-6 pt-12 md:gap-4">
           {posts?.length ? (
             posts.map((post) => <PostCard key={post.id} post={post} />)
           ) : (
