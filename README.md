@@ -50,6 +50,10 @@
 
   ## 🖥️ Front-end
 
+  ### 🗡️ Projeto
+
+  <p>Nesse projeto o maior desafio para mim foi consumo de API, pois o Front-end já tinha uma ideia de como programar e o Back-end já tinha feito APIs e estudei por fora, então só faltou o consumo de API mas no final deu tudo certo e fica como aprendizado o consumo de APIs que é bem importante para um desenvolvedor.</p>
+
   ### 🚀 Tecnologias
 
   <img title="Axios" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" alt="Axios" width="50" /> &nbsp;
