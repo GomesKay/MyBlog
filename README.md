@@ -2,18 +2,26 @@
   
   ![Tela da Aplicação](https://github.com/user-attachments/assets/9d0cb908-9442-45eb-bd85-2b044303bbf4)
 
-  <h2 align="center"> 💻 Projeto</h2>
+  <h2 align="center"> 💻 Instalação e Uso</h2>
   
   > [!NOTE]
   > Esse projeto foi separado em duas pastas (<b>server: Back-End</b>, <b>web: Front-End</b>)
 
+  ### 🛠️ Pré-requisitos
+  - Node.js
+  - NPM
+  - Git
+  - VSCode
+
   | Passos | Comandos | Descrição |
   | --- | --- | --- |
-  | 01 | `git clone (URL do repositório)` | Clona esse repositório no seu computador |
-  | 02 | ... | Extraia o arquivo e abra cada pasta em uma janela diferente no VSCode (Pasta server e web) |
-  | 03 |  `npm install` | Execute este comando no terminal de cada pasta aberta no VSCode |
-  | 04 | `npm run dev` | Tanto no Back-end e no Front-end tem que executar este comando no terminal de cada janela do VSCode para rodar o projeto 100% |
-  | 05 | ... | Com os dois executanto simultaneamente, você poderá testar a aplicação no navegador |
+  | 01 | `git clone https://github.com/GomesKay/MyBlog.git` | Clona esse repositório no seu computador |
+  | 02 |  `npm install` | Execute este comando (Instala as dependências) no terminal de cada pasta aberta no VSCode, tanto na pasta <b>server</b> (Back-end) quanto na pasta <b>web</b> (Front-end) |
+  | 03 | `DATABASE_URL="file:./dev.db"` | No <b>server</b> (Back-end) crie um aqui <i>.env</i> na raiz do projeto e coloque a linha de códígo descrita a esquerda |
+  | 04 | `npx prisma validate` | Use esse comando no terminal para ter certeza que irá ler o arquivo <i>.env</i> no Back-end |
+  | 05 | `npx prisma generate` | Use ess comando no terminal para gerar o cliente Prisma no terminal do Back-end |
+  | 06 | `npm run dev` | Tanto no Back-end e no Front-end tem que executar este comando no terminal de cada janela do VSCode para rodar o projeto 100% |
+  | 07 | ... | Com os dois executanto simultaneamente, você poderá testar a aplicação no navegador |
 
   <div align="center">
     
